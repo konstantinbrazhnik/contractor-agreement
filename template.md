@@ -1,11 +1,11 @@
 # Contractor Engagement Agreement
 
-Contractor: {{contractor_name}}
+Contractor: {{contractor_name}}  
 License #: {{contractor_license_number}}
 
 The following is a CONTRACT for services, materials and labor to be supplied by the Contractor at the request and order of the homeowner. 
 
-Owner/Client: {{client_name}}
+Owner/Client: {{client_name}}  
 Site Location: {{site_location}}
 
 ## 1. DESCRIPTION OF WORK TO BE PERFORMED AND MATERIALS PROVIDED 
@@ -37,9 +37,10 @@ Contractor agrees to protect, defend, and indemnify Owner from any claims for un
 If this agreement was solicited at or near Client residence and Client does not want the goods or services, this agreement may be canceled by mailing a notice to the Contractor. The notice must say that Client does not want the goods or services and must be mailed before midnight of the third business day after the contract is signed. 
 
 The notice must be mailed to: 
-_____________________________________
-_____________________________________
-_____________________________________
+
+  {{ contractor_street_address }}
+  {{ contract_city_state_zip }}
+
 If canceled, Contractor may not keep any part of Client down payment. 
 
 ## 9. LATE PERFORMANCE/PAYMENT 
@@ -66,11 +67,14 @@ Contractor's Acceptance:
 
 
 
+
+
+{{ contractor_name }}
 _________________________________		___________________________
 Company Name						            Date
 
 
-
+{{ contractor_representative }}
 _________________________________		___________________________
 Representative Name					        Title
 
@@ -79,11 +83,14 @@ Homeowner(s) Acceptance:
 
 
 
+
+
+{{ client_name }}
 _________________________________		___________________________
 Company Name						            Date
 
 
-
+{{ client_rep }}                    {{ client_rep_title }}
 _________________________________		___________________________
 Representative Name					        Title
 
