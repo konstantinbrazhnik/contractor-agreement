@@ -1,0 +1,38 @@
+{
+ "pages": [
+  {
+   "name": "Contractor Information",
+   "elements": [
+    {
+     "type": "text",
+     "name": "contractor_name",
+     "title": "Contractor Name",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "contractor_license_number",
+     "title": "Contractor License"
+    }
+   ],
+   "title": "Contractor Agreement"
+  },
+  {
+   "name": "Owner Information",
+   "elements": [
+    {
+     "type": "text",
+     "name": "client_name",
+     "title": "Owner Name",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "site_location",
+     "title": "Site Location",
+     "isRequired": true
+    }
+   ]
+  }
+ ]
+}
