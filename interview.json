@@ -33,6 +33,57 @@
      "isRequired": true
     }
    ]
+  },
+  {
+   "name": "Job Details",
+   "elements": [
+    {
+     "type": "text",
+     "name": "warranty_length",
+     "title": "Warranty Length"
+    },
+    {
+     "type": "text",
+     "name": "start_date",
+     "title": "Start Date"
+    },
+    {
+     "type": "text",
+     "name": "end_date",
+     "title": "End Date"
+    }
+   ],
+   "title": "Job Details"
+  },
+  {
+   "name": "Payment Details",
+   "elements": [
+    {
+     "type": "text",
+     "name": "deposit_amount",
+     "title": "Deposit Amount",
+     "isRequired": true,
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "text",
+     "name": "end_balance",
+     "title": "End Balance",
+     "isRequired": true,
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "expression",
+     "name": "total_cost",
+     "visible": false,
+     "title": "Total Cost",
+     "expression": "{deposit_amount}+{end_balance}",
+     "commentText": "Other (describe)"
+    }
+   ],
+   "title": "Payment Details"
   }
  ]
 }
