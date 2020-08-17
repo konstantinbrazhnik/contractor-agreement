@@ -12,7 +12,20 @@
     {
      "type": "text",
      "name": "contractor_license_number",
-     "title": "Contractor License"
+     "title": "Contractor License",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "contractor_street_address",
+     "title": "Contractor Street Address",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "contractor_city_state_zip",
+     "title": "Contractor City State and Zip",
+     "isRequired": true
     }
    ],
    "title": "Contractor Agreement"
@@ -23,20 +36,32 @@
     {
      "type": "text",
      "name": "client_name",
-     "title": "Owner Name",
+     "title": "Client Name",
      "isRequired": true
     },
     {
      "type": "text",
-     "name": "site_location",
-     "title": "Site Location",
+     "name": "client_rep",
+     "title": "Client Representative",
+     "isRequired": true
+    },
+    {
+     "type": "text",
+     "name": "client_rep_title",
+     "title": "Client Representative Title",
      "isRequired": true
     }
-   ]
+   ],
+   "title": "Client Information"
   },
   {
    "name": "Job Details",
    "elements": [
+    {
+     "type": "text",
+     "name": "site_location",
+     "title": "Site Location"
+    },
     {
      "type": "text",
      "name": "warranty_length",
@@ -84,6 +109,18 @@
     }
    ],
    "title": "Payment Details"
+  },
+  {
+   "name": "Scope of Work",
+   "elements": [
+    {
+     "type": "comment",
+     "name": "scope_of_work",
+     "title": "Scope of Work",
+     "isRequired": true
+    }
+   ],
+   "title": "Scope of Work"
   }
  ]
 }
